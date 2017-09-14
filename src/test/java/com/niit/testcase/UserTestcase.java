@@ -51,16 +51,16 @@ public class UserTestcase {
 	/*@Test
 	public void updateUserTestCase(){
 		user.setId("S1001");
-		user.setName("SAKTHI");
-		user.setPassword("sakthi");
-		user.setContact(99922);
+		user.setName("Meera");
+		user.setPassword("Meena");
+		user.setContact(88765);
 		boolean flag=userDAO.update(user);
 		assertEquals("createUserTestCase",true,flag);
 		}*/
 	
 	/*@Test
 	public void validateUserTestCase(){
-		boolean flag=userDAO.validate("Sakthi","sakthi");
+		boolean flag=userDAO.validate("Meena","Meena");
 		assertEquals(true,flag);
 	}*/
 	
