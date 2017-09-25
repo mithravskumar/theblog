@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Info Chat</title>
+
+
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet"
+	href="http://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet'
+	href="https://fonts.googleapis.com/css?family=Open+Sans">
+<link rel="stylesheet" href="c_resource/assets/css/font-awesome.min.css">
+<link
+	href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700"
+	rel="stylesheet" type="text/css" />
+<link href="c_resource/assets/css/style.css" rel="stylesheet"
+	type="text/css">
+	 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-cookies.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.1/sockjs.js"></script>
+
+<style>
+body {
+  background-image:url(http://paper-backgrounds.com/textureimages/2012/03/Natural-Paper-Background-Texture-Vintage-HD.jpg);
+}
+/* Set black background color, white text and some padding */
+footer {
+	 background: transparent !important;}
+}
+li {
+	display: inline;
+}
+#social:hover {
+    			-webkit-transform:scale(1.1); 
+-moz-transform:scale(1.1); 
+-o-transform:scale(1.1); 
+			}
+			#social {
+				-webkit-transform:scale(0.8);
+                /* Browser Variations: */
+-moz-transform:scale(0.8);
+-o-transform:scale(0.8); 
+-webkit-transition-duration: 0.5s; 
+-moz-transition-duration: 0.5s;
+-o-transition-duration: 0.5s;
+			}           
+/* 
+    Only Needed in Multi-Coloured Variation 
+                                               */
+			.social-fb:hover {
+				color: #3B5998;
+			}
+			.social-tw:hover {
+				color: #4099FF;
+			}
+			.social-gp:hover {
+				color: #d34836;
+			}
+			.social-em:hover {
+				color: #f39c12;
+			}
+			.nomargin { margin:0px; padding:0px;}
+.footer-bottom {
+    background-color: #15224f;
+    min-height: 30px;
+    width: 100%;
+    
+    margin-top: 10em;
+}
+.copyright {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+}
+.design {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+    text-align: right;
+}
+.design a {
+    /* color: #fff; */
+}
+</style>
+</head>
+<body data-ng-app="myApp"
+	data-ng-controller="userController">
+	<div data-ng-include src="'c_common/navbar.html'"></div>
+	<hr>
+	<div data-ng-view=""></div>
+	<footer class="container-fluid">
+		<div style="float: left;">
+			
+		</div>
+	</footer>
+	<div class="footer-bottom">
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+				<div class="copyright">
+
+					© 2015, INFO CHAT, All rights reserved
+
+				</div>
+
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+				<div class="design">
+
+					<div class="social-icons">
+                                
+                                	
+                                    
+                <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social-fb" id="social"></i></a>
+	            <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social-tw" id="social"></i></a>
+	            <a href="https://plus.google.com/+Bootsnipp-page"><i class="fa fa-google-plus-square fa-3x social-gp" id="social"></i></a>
+	            <a href="mailto:bootsnipp@gmail.com"><i class="fa fa-envelope-square fa-3x social-em" id="social"></i></a>
+                                    
+                                  
+                                </div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div> 
+	<script type="text/javascript"
+		src="c_resource/assets/js/angular.min.js"></script>
+	<script type="text/javascript"
+		src="c_resource/assets/js/angular-route.min.js"></script>
+	<script type="text/javascript"
+		src="c_resource/assets/js/angular-cookies.min.js"></script>
+	<!-- 	Chat -->
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.1/sockjs.min.js"
+		type="text/javascript"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.js"
+		type="text/javascript"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.16.3/lodash.js"
+		type="text/javascript"></script>
+	<!-- End Chat -->
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="c_user/userController.js"></script>
+	<script type="text/javascript" src="c_user/userService.js"></script>
+	<script type="text/javascript" src="c_blog/blogController.js"></script>
+	<script type="text/javascript" src="c_blog/editController.js"></script>
+	<script type="text/javascript" src="c_blog/blogService.js"></script>
+	<script type="text/javascript" src="c_comment/commentController.js"></script>
+	<script type="text/javascript" src="c_comment/commentService.js"></script>
+	<script type="text/javascript" src="c_job/jobController.js"></script>
+	<script type="text/javascript" src="c_job/jobService.js"></script>
+	<script type="text/javascript" src="c_job/editJobController.js"></script>
+	<script type="text/javascript" src="c_friend/friendController.js"></script>
+	<script type="text/javascript" src="c_friend/friendService.js"></script>
+	<script type="text/javascript" src="c_chat/chatService.js"></script>
+	<script type="text/javascript" src="c_chat/chatController.js"></script>
+	<!-- 	End AngularScript -->
+</body>
+</html>
