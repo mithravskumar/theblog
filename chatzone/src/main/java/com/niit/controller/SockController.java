@@ -61,8 +61,7 @@ import com.niit.model.User;
 
 
 @Controller
-public 
-class SockController {
+public class SockController {
 	
 	
 private static final Log logger = LogFactory.getLog(SockController.class);
